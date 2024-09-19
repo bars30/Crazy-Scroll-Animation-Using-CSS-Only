@@ -1,0 +1,34 @@
+body {
+ background-color: #ffffff; /* White background */
+ background-image: radial-gradient(circle, #ccc 1px, transparent 1px); /* Create the dots */
+ background-size: 20px 20px; /* Spacing between dots */
+}
+.cont {
+ width: 92%;
+ margin: auto;
+}
+.img {
+ width: 100%;
+ border-radius: 15px;
+}
+h1 {
+ color: #a530cd;
+ text-align: center;
+}
+.autoRotate {
+ width: 250px;
+ animation: autoRotateAnimation;
+ animation-timeline: view();
+ display: block;
+ margin: auto;
+} 
+@keyframes autoRotateAnimation {
+ from {
+  transform: rotate(0deg);
+ } to {
+  transform: rotate(360deg);
+ }
+}
+
+
+
